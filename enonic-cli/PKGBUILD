@@ -1,0 +1,15 @@
+pkgname=enonic-cli
+pkgver=1.0.6
+pkgrel=1
+pkgdesc="Enonic XP CLI command-line tool"
+url="https://github.com/enonic/cli-enonic"
+license=('GPL3')
+arch=('x86_64')
+
+source=("https://repo.enonic.com/public/com/enonic/cli/enonic/${pkgver}/enonic_${pkgver}_Linux_64-bit.tar.gz")
+sha256sums=('46b5a088d353732f4946f201cad6e819631d0725bee894a779738eb4ade29030')
+package() {
+    cd "$srcdir"
+    install -d "$pkgdir/usr/bin"
+    install -m755 enonic "$pkgdir/usr/bin/enonic"
+}
