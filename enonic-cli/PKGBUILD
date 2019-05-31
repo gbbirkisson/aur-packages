@@ -1,15 +1,15 @@
 # Maintainer: Guðmundur Björn Birkisson <gbbirkisson@gmail.com>
 # Contributor: Guðmundur Björn Birkisson <gbbirkisson@gmail.com>
 pkgname=enonic-cli
-pkgver=1.0.6
+pkgver=1.0.7
 pkgrel=1
 pkgdesc="The Enonic XP command-line tool"
 arch=('x86_64')
 url="https://developer.enonic.com/start"
 license=('GPL')
 source=("https://repo.enonic.com/public/com/enonic/cli/enonic/${pkgver}/enonic_${pkgver}_Linux_64-bit.tar.gz")
-md5sums=('187434162a6aa2a5fccb35905920f6a2')
-sha256sums=('46b5a088d353732f4946f201cad6e819631d0725bee894a779738eb4ade29030')
+md5sums=('55220bacca5ea590718059bd70f883f8')
+sha256sums=('50f5911ce360c121f9e1c01f315bc436ab7337c806893fbb8de27fedbd11bc01')
 
 package() {
     cd "$srcdir"

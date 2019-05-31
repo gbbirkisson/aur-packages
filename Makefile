@@ -8,7 +8,7 @@ validate: _test
 	@cd ${WDIR} && namcap -i PKGBUILD && updpkgsums
 
 create: validate
-	@cd ${WDIR} && makepkg --printsrcinfo > .SRCINFO && makepkg -f
+	@cd ${WDIR} && rm -f *.xz && makepkg --printsrcinfo > .SRCINFO && makepkg -f
 
 install: create
 	@cd ${WDIR} && sudo pacman -U enonic-cli*.xz
