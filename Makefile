@@ -11,7 +11,7 @@ create: validate
 	@cd ${WDIR} && rm -f *.xz && makepkg --printsrcinfo > .SRCINFO && makepkg -f
 
 install: create
-	@cd ${WDIR} && sudo pacman -U enonic-cli*.xz
+	@cd ${WDIR} && sudo pacman -U ${PACKAGE}*.xz
 
 uninstall:
 	@sudo pacman -R ${PACKAGE}
