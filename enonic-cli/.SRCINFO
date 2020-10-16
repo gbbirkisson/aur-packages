@@ -1,13 +1,13 @@
 pkgbase = enonic-cli
 	pkgdesc = The Enonic XP command-line tool
-	pkgver = 1.1.1
+	pkgver = 1.4.0
 	pkgrel = 1
 	url = https://developer.enonic.com/start
 	arch = x86_64
 	license = GPL
-	source = https://repo.enonic.com/public/com/enonic/cli/enonic/1.1.1/enonic_1.1.1_Linux_64-bit.tar.gz
-	md5sums = 253ae631bc8fc26e887c9f5e490d9d6c
-	sha256sums = f7b57e9810757fc5f8087bbec7873b35b0f66c9560aa6aa0da6dbff8e1a1f45f
+	source = https://repo.enonic.com/public/com/enonic/cli/enonic/1.4.0/enonic_1.4.0_Linux_64-bit.tar.gz
+	md5sums = a5667accbc1d8786ef9c8a442635d64b
+	sha256sums = 27a6ddf1c9df57a0812d2ec93915377395cf85506fcfd81ca947b79c3f75afb7
 
 pkgname = enonic-cli
 
