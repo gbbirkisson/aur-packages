@@ -1,0 +1,18 @@
+# Maintainer: Guðmundur Björn Birkisson <gbbirkisson@gmail.com>
+# Contributor: Guðmundur Björn Birkisson <gbbirkisson@gmail.com>
+pkgname=op-cli
+pkgver=1.8.0
+pkgrel=1
+pkgdesc="The 1password command-line tool"
+arch=('x86_64')
+url="https://1password.com/downloads/command-line/"
+license=('GPL')
+source=("https://cache.agilebits.com/dist/1P/op/pkg/v${pkgver}/op_linux_amd64_v${pkgver}.zip")
+md5sums=('485d3b97577d9d5511a4061857ac313b')
+sha256sums=('4f257af9eeeca5d40d099e76e30322afbb44b0d34c052ec4fe3378deadefee68')
+
+package() {
+    cd "$srcdir"
+    install -d "$pkgdir/usr/bin"
+    install -m755 op "$pkgdir/usr/bin/op"
+}
