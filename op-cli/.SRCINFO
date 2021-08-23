@@ -1,13 +1,12 @@
 pkgbase = op-cli
 	pkgdesc = The 1password command-line tool
-	pkgver = 1.8.0
+	pkgver = 1.11.2
 	pkgrel = 1
 	url = https://1password.com/downloads/command-line/
 	arch = x86_64
 	license = GPL
-	source = https://cache.agilebits.com/dist/1P/op/pkg/v1.8.0/op_linux_amd64_v1.8.0.zip
-	md5sums = 485d3b97577d9d5511a4061857ac313b
-	sha256sums = 4f257af9eeeca5d40d099e76e30322afbb44b0d34c052ec4fe3378deadefee68
+	source = https://cache.agilebits.com/dist/1P/op/pkg/v1.11.2/op_linux_amd64_v1.11.2.zip
+	md5sums = 4283981f937fb1360fc540e208525821
+	sha256sums = 73a9d4dc3db049ca7e2a4a1084fc783dac5fb2eb17ea29f84b77ab8e1e39aa98
 
 pkgname = op-cli
-
