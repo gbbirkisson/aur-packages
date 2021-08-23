@@ -1,6 +1,7 @@
+<img align="right" width="128" height="128" src="logo.png">
 <h1>AUR packages</h1>
 
-These are my aur packages 📦
+These are my personal aur packages.
 
 - [Installing a package](#installing-a-package)
 - [Makefile help](#makefile-help)
@@ -15,11 +16,11 @@ $ make install
 ## Makefile help
 
 ```console
-$ make help
+$ make
 Makefile targets:
+  validate   Validate package
   create     Create package
-  help       Show help
   install    Install package
   uninstall  Uninstall package
-  validate   Validate package
+  help       Show help
 ```
