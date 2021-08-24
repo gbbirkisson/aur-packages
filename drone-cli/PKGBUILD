@@ -1,0 +1,18 @@
+# Maintainer: Guðmundur Björn Birkisson <gbbirkisson@gmail.com>
+# Contributor: Guðmundur Björn Birkisson <gbbirkisson@gmail.com>
+pkgname=drone-cli
+pkgver=1.3.1
+pkgrel=1
+pkgdesc="The drone command-line tool"
+arch=('x86_64')
+url="https://github.com/drone/drone-cli"
+license=('Apache-2.0')
+source=("https://github.com/drone/drone-cli/releases/download/v${pkgver}/drone_linux_amd64.tar.gz")
+md5sums=('5ac1a341a0a098b63b0e844ea41c4d0e')
+sha256sums=('0297695526688ddad7dae1b30c48be3514a03c34b2d72e250ae788c5b3bdcf62')
+
+package() {
+    cd "$srcdir"
+    install -d "$pkgdir/usr/bin"
+    install -m755 drone "$pkgdir/usr/bin/drone"
+}
