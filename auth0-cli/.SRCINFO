@@ -1,0 +1,12 @@
+pkgbase = auth0-cli
+	pkgdesc = the command line to supercharge your development workflow.
+	pkgver = 0.11.2
+	pkgrel = 1
+	url = https://github.com/auth0/auth0-cli
+	arch = x86_64
+	license = MPL
+	provides = auth0
+	source = auth0-cli-0.11.2.tar.gz::https://github.com/auth0/auth0-cli/releases/download/v0.11.2/auth0-cli_0.11.2_Linux_x86_64.tar.gz
+	sha256sums = 9d22beb28fcd531f6d2b732b0c05065f397e9c2d1f12d54bf6e5a4de6d087b59
+
+pkgname = auth0-cli

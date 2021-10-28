@@ -1,0 +1,19 @@
+# Maintainer: Guðmundur Björn Birkisson <gbbirkisson@gmail.com>
+# Contributor: Guðmundur Björn Birkisson <gbbirkisson@gmail.com>
+pkgname=auth0-cli
+pkgver=0.11.2
+pkgrel=1
+pkgdesc='the command line to supercharge your development workflow.'
+arch=('x86_64')
+url="https://github.com/auth0/auth0-cli"
+license=('MPL')
+provides=('auth0')
+source=("${pkgname}-${pkgver}.tar.gz::https://github.com/auth0/auth0-cli/releases/download/v${pkgver}/auth0-cli_${pkgver}_Linux_${CARCH}.tar.gz")
+
+sha256sums=('9d22beb28fcd531f6d2b732b0c05065f397e9c2d1f12d54bf6e5a4de6d087b59')
+
+package() {
+    cd "$srcdir"
+    install -d "$pkgdir/usr/bin"
+    install -m755 auth0 "$pkgdir/usr/bin/auth0"
+}
