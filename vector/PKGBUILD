@@ -1,0 +1,18 @@
+# Maintainer: Guðmundur Björn Birkisson <gbbirkisson@gmail.com>
+# Contributor: Guðmundur Björn Birkisson <gbbirkisson@gmail.com>
+pkgname=vector
+pkgver=0.15.1
+pkgrel=1
+pkgdesc='A lightweight and ultra-fast tool for building observability pipelines'
+arch=('x86_64')
+url="https://vector.dev"
+license=('MPL')
+provides=('vector')
+source=("${pkgname}-${pkgver}.tar.gz::https://packages.timber.io/vector/${pkgver}/vector-${pkgver}-${CARCH}-unknown-linux-musl.tar.gz")
+sha256sums=('16c9aa0b9cf2c3df3cfcd745e69d0b9ca094fde28ea2597d6f49b6423397574a')
+
+package() {
+    cd "${srcdir}/vector-${CARCH}-unknown-linux-musl"
+    install -d "$pkgdir/usr/bin"
+    install -m755 "bin/vector" "$pkgdir/usr/bin/vector"
+}
