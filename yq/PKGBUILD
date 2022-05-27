@@ -1,0 +1,19 @@
+# Maintainer: Guðmundur Björn Birkisson <gbbirkisson@gmail.com>
+# Contributor: Guðmundur Björn Birkisson <gbbirkisson@gmail.com>
+pkgname=yq
+pkgver=4.25.1
+pkgrel=1
+pkgdesc="jq for yaml"
+arch=('x86_64')
+url="https://github.com/mikefarah"
+license=('MIT')
+source=("https://github.com/mikefarah/yq/releases/download/v${pkgver}/yq_linux_amd64")
+md5sums=('840d37091dc648f47fb79385562520b0')
+sha256sums=('57b6247bc2406c20a887aee3594399e081759601fd2f8ae9df21938499d76c81')
+
+package() {
+    cd "$srcdir"
+    ls
+    install -d "$pkgdir/usr/bin"
+    install -m755 yq_linux_amd64 "$pkgdir/usr/bin/yq"
+}
