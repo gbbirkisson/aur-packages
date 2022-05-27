@@ -1,0 +1,18 @@
+# Maintainer: Guðmundur Björn Birkisson <gbbirkisson@gmail.com>
+# Contributor: Guðmundur Björn Birkisson <gbbirkisson@gmail.com>
+pkgname=act-cli
+pkgver=0.2.26
+pkgrel=1
+pkgdesc="Run github actions locally"
+arch=('x86_64')
+url="https://github.com/nektos/act"
+license=('MIT')
+source=("https://github.com/nektos/act/releases/download/v${pkgver}/act_Linux_x86_64.tar.gz")
+md5sums=('1453370e5710f693b586c81900d72708')
+sha256sums=('da7cea99e2fc3ffa2db3e83a2983fdb20f7228c0c4855a0b7fa74dab40997853')
+
+package() {
+    cd "$srcdir"
+    install -d "$pkgdir/usr/bin"
+    install -m755 act "$pkgdir/usr/bin/act"
+}
